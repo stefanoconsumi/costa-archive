@@ -19,7 +19,7 @@
       <img src="assets/costa-logo.png" alt="COSTA" />
     </a>
 
-    <div class="header-meta">
+    <div class="header-meta mono">
       <span>MUSIC ARCHIVE</span>
       <span>COSTA RICA — SC</span>
     </div>
@@ -33,11 +33,29 @@
 
   <main>
     <section class="masthead shell">
-      <div class="masthead-index">COSTA / 2026</div>
-      <h1>MUSIC<br><span>ARCHIVE</span></h1>
-      <div class="masthead-copy">
-        <p>MUSIC FOR THE PEOPLE.</p>
-        <p>CURATED / ARCHIVED / KEPT MOVING.</p>
+      <div class="masthead-grid">
+        <div class="masthead-index mono">COSTA / 2026</div>
+
+        <h1>
+          <span>MUSIC</span>
+          <span>ARCHIVE</span>
+        </h1>
+
+        <div class="masthead-copy mono">
+          <p>MUSIC FOR THE PEOPLE.</p>
+          <p>CURATED / ARCHIVED / KEPT MOVING.</p>
+        </div>
+      </div>
+
+      <div class="masthead-visual">
+        <img src="assets/recent-2.webp" alt="" />
+        <div class="masthead-drag drag-one" aria-hidden="true"></div>
+        <div class="masthead-drag drag-two" aria-hidden="true"></div>
+
+        <div class="masthead-caption mono">
+          <span>EDITORIAL / MUSIC / ARCHIVE</span>
+          <span>MOVEMENT / GRAIN / MEMORY</span>
+        </div>
       </div>
     </section>
 
@@ -53,7 +71,7 @@
             <img class="featured-image" src="assets/featured.webp" alt="Featured COSTA release" />
             <div class="drag-layer drag-a" aria-hidden="true"></div>
             <div class="drag-layer drag-b" aria-hidden="true"></div>
-            <div class="photo-note">MOVEMENT / PEOPLE / PLACES</div>
+            <div class="photo-note mono">MOVEMENT / PEOPLE / PLACES</div>
           </div>
 
           <div class="featured-copy">
@@ -74,12 +92,13 @@
 
     <section class="recent shell" id="releases">
       <div class="section-head">
-        <div>
+        <div class="section-title-wrap">
           <span class="mono section-number">02</span>
           <h2>RECENT RELEASES</h2>
         </div>
-        <div class="section-tools">
-          <span class="mono" id="filter-label">ALL RELEASES</span>
+
+        <div class="section-tools mono">
+          <span id="filter-label">ALL RELEASES</span>
           <button class="text-button mono" id="show-all">RESET FILTER</button>
         </div>
       </div>
@@ -90,11 +109,14 @@
     <section class="folder-section">
       <div class="shell">
         <div class="section-head folder-head">
-          <div>
+          <div class="section-title-wrap">
             <span class="mono section-number">03</span>
             <h2>OPEN THE ARCHIVE</h2>
           </div>
-          <p class="folder-intro">Choose a folder. The archive filters itself without hiding the structure of the page.</p>
+
+          <p class="folder-intro">
+            Choose a folder. The structure stays visible while the release index filters below.
+          </p>
         </div>
 
         <div class="folder-grid" aria-label="Archive folders">
@@ -161,9 +183,13 @@
       <div class="identity-logo">
         <img src="assets/costa-logo.png" alt="" />
       </div>
+
       <p class="identity-statement">EDITORIAL / MUSIC / ARCHIVE</p>
+
       <div class="identity-notes mono">
-        <span>MOTION</span><span>GRAIN</span><span>MEMORY</span>
+        <span>MOTION</span>
+        <span>GRAIN</span>
+        <span>MEMORY</span>
       </div>
     </section>
 
