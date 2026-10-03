@@ -19,26 +19,39 @@ function card(r){
         <img src="${r.img}" alt="">
         <span class="release-drag" style="background-image:url('${r.img}')" aria-hidden="true"></span>
       </div>
-      <div class="release-topline"><span>${r.id}</span><span>${r.type}</span></div>
+      <div class="release-topline">
+        <span>${r.id}</span>
+        <span>${r.type}</span>
+      </div>
       <h3>${r.title}</h3>
-      <div class="release-bottom"><span>${r.meta}</span><span>↗</span></div>
+      <div class="release-bottom">
+        <span>${r.meta}</span>
+        <span>↗</span>
+      </div>
     </article>`;
 }
 
 function draw(){
   const data=active==="all"?releases.slice(0,3):releases.filter(r=>r.cat===active);
   filterLabel.textContent=active==="all"?"ALL RELEASES":active.toUpperCase();
-  grid.innerHTML=data.length?data.map(card).join(""):'<div class="empty-state">NO FILES IN THIS FOLDER YET.</div>';
+  grid.innerHTML=data.length
+    ?data.map(card).join("")
+    :'<div class="empty-state">NO FILES IN THIS FOLDER YET.</div>';
 }
 
 function setFilter(filter,scroll=true){
   active=filter;
   folders.forEach(folder=>folder.classList.toggle("active",folder.dataset.filter===filter));
   draw();
-  if(scroll) document.querySelector("#releases").scrollIntoView({behavior:"smooth",block:"start"});
+  if(scroll){
+    document.querySelector("#releases").scrollIntoView({behavior:"smooth",block:"start"});
+  }
 }
 
-folders.forEach(folder=>folder.addEventListener("click",()=>setFilter(folder.dataset.filter)));
+folders.forEach(folder=>{
+  folder.addEventListener("click",()=>setFilter(folder.dataset.filter));
+});
+
 document.querySelector("#show-all").addEventListener("click",()=>setFilter("all",false));
 
 draw();

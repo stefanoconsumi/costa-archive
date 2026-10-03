@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="theme-color" content="#eeeae2" />
+  <meta name="theme-color" content="#080808" />
   <title>COSTA — Music Archive</title>
   <meta name="description" content="COSTA music archive — beats, remixes, mashups, originals, mixes and extendeds." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="paper-grain" aria-hidden="true"></div>
+  <div class="page-noise" aria-hidden="true"></div>
 
   <header class="site-header shell" id="top">
     <a class="brand" href="#top" aria-label="COSTA home">
@@ -32,36 +32,31 @@
   </header>
 
   <main>
-    <section class="masthead shell">
-      <div class="masthead-grid">
-        <div class="masthead-index mono">COSTA / 2026</div>
-
-        <h1>
-          <span>MUSIC</span>
-          <span>ARCHIVE</span>
-        </h1>
-
-        <div class="masthead-copy mono">
-          <p>MUSIC FOR THE PEOPLE.</p>
-          <p>CURATED / ARCHIVED / KEPT MOVING.</p>
+    <section class="hero shell">
+      <div class="hero-media">
+        <img src="assets/recent-2.webp" alt="" class="hero-image" />
+        <span class="hero-drag hero-drag-a" aria-hidden="true"></span>
+        <span class="hero-drag hero-drag-b" aria-hidden="true"></span>
+        <span class="hero-ghost" aria-hidden="true"></span>
+        <div class="hero-meta mono">
+          <span>EDITORIAL / MUSIC / ARCHIVE</span>
+          <span>MOTION / GRAIN / MEMORY</span>
         </div>
       </div>
 
-      <div class="masthead-visual">
-        <img src="assets/recent-2.webp" alt="" />
-        <div class="masthead-drag drag-one" aria-hidden="true"></div>
-        <div class="masthead-drag drag-two" aria-hidden="true"></div>
-
-        <div class="masthead-caption mono">
-          <span>EDITORIAL / MUSIC / ARCHIVE</span>
-          <span>MOVEMENT / GRAIN / MEMORY</span>
-        </div>
+      <div class="hero-copy">
+        <p class="eyebrow mono">COSTA / 2026</p>
+        <h1>MUSIC<br>ARCHIVE</h1>
+        <p class="hero-statement">MUSIC FOR THE PEOPLE.</p>
+        <p class="hero-description mono">CURATED / ARCHIVED / KEPT MOVING.</p>
+        <div class="hero-rule"></div>
+        <p class="hero-location mono">COSTA RICA / SC / 2026</p>
       </div>
     </section>
 
     <section class="featured-wrap" id="archive">
       <article class="featured shell">
-        <div class="featured-label-row">
+        <div class="section-line mono">
           <span>01 — FEATURED RELEASE</span>
           <span>CST003 / EDIT / 2026</span>
         </div>
@@ -69,15 +64,16 @@
         <div class="featured-layout">
           <div class="featured-media">
             <img class="featured-image" src="assets/featured.webp" alt="Featured COSTA release" />
-            <div class="drag-layer drag-a" aria-hidden="true"></div>
-            <div class="drag-layer drag-b" aria-hidden="true"></div>
+            <span class="drag-layer drag-a" aria-hidden="true"></span>
+            <span class="drag-layer drag-b" aria-hidden="true"></span>
+            <span class="drag-layer drag-c" aria-hidden="true"></span>
             <div class="photo-note mono">MOVEMENT / PEOPLE / PLACES</div>
           </div>
 
           <div class="featured-copy">
             <p class="mono label">CURRENT FEATURE</p>
             <h2>LATE HOURS<br>EDIT</h2>
-            <p class="featured-meta mono">98 BPM / F# MIN / MP3 + WAV</p>
+            <p class="featured-meta mono">EDIT / 98 BPM / F# MIN / 2026</p>
             <p class="featured-desc">
               A late-night flip built for movement. Familiar fragments, dusty drums and club energy — archived through the COSTA lens.
             </p>
@@ -115,7 +111,7 @@
           </div>
 
           <p class="folder-intro">
-            Choose a folder. The structure stays visible while the release index filters below.
+            Choose a folder. The structure stays visible while the release index filters above.
           </p>
         </div>
 
@@ -179,37 +175,21 @@
       </div>
     </section>
 
-    <section class="identity-strip shell">
-      <div class="identity-logo">
-        <img src="assets/costa-logo.png" alt="" />
-      </div>
-
-      <p class="identity-statement">EDITORIAL / MUSIC / ARCHIVE</p>
-
-      <div class="identity-notes mono">
-        <span>MOTION</span>
-        <span>GRAIN</span>
-        <span>MEMORY</span>
-      </div>
-    </section>
-
-    <section class="info shell" id="about">
-      <div class="info-label mono">04 — ABOUT</div>
-      <div class="info-copy">
+    <section class="closing shell">
+      <article class="closing-card" id="about">
+        <span class="closing-kicker mono">04 — ABOUT</span>
         <h2>BUILT FROM RHYTHM,<br>CULTURE & PASIÓN.</h2>
         <p>COSTA is a moving creative identity rooted in music — mixes, edits, originals and the visual language around them.</p>
-      </div>
-    </section>
+      </article>
 
-    <section class="info shell support" id="support">
-      <div class="info-label mono">05 — SUPPORT</div>
-      <div class="info-copy">
+      <article class="closing-card support" id="support">
+        <span class="closing-kicker mono">05 — SUPPORT</span>
         <h2>TAKE THE MUSIC.<br>SUPPORT IF IT MOVES YOU.</h2>
         <div class="support-links">
           <a href="#" aria-disabled="true">SOUNDCLOUD ↗</a>
           <a href="#" aria-disabled="true">INSTAGRAM ↗</a>
         </div>
-      </div>
+      </article>
     </section>
   </main>
 
