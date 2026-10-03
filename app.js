@@ -15,7 +15,10 @@ let active="all";
 function card(r){
   return `
     <article class="release-card">
-      <div class="release-image"><img src="${r.img}" alt=""></div>
+      <div class="release-image">
+        <img src="${r.img}" alt="">
+        <span class="release-drag" style="background-image:url('${r.img}')" aria-hidden="true"></span>
+      </div>
       <div class="release-topline"><span>${r.id}</span><span>${r.type}</span></div>
       <h3>${r.title}</h3>
       <div class="release-bottom"><span>${r.meta}</span><span>↗</span></div>
