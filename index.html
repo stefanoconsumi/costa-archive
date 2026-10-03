@@ -32,25 +32,74 @@
   </header>
 
   <main>
-    <section class="hero shell">
-      <div class="hero-media">
-        <img src="assets/recent-2.webp" alt="" class="hero-image" />
-        <span class="hero-drag hero-drag-a" aria-hidden="true"></span>
-        <span class="hero-drag hero-drag-b" aria-hidden="true"></span>
-        <span class="hero-ghost" aria-hidden="true"></span>
-        <div class="hero-meta mono">
-          <span>EDITORIAL / MUSIC / ARCHIVE</span>
-          <span>MOTION / GRAIN / MEMORY</span>
+    <section class="index-hero shell" aria-labelledby="archive-index-title">
+      <div class="archive-index">
+        <div class="index-kicker mono">
+          <span id="archive-index-title">ARCHIVE INDEX / 2026</span>
+          <span>VOL. 01</span>
+        </div>
+
+        <div class="index-list" aria-label="Archive categories">
+          <div class="index-row index-row-active">
+            <span class="index-no mono">00</span>
+            <span class="index-name">ALL FILES</span>
+            <span class="index-meta mono">MASTER INDEX</span>
+            <span class="index-arrow">↗</span>
+          </div>
+          <div class="index-row">
+            <span class="index-no mono">01</span>
+            <span class="index-name">BEATS</span>
+            <span class="index-meta mono">INSTRUMENTALS / IDEAS</span>
+            <span class="index-arrow">↗</span>
+          </div>
+          <div class="index-row">
+            <span class="index-no mono">02</span>
+            <span class="index-name">REMIXES</span>
+            <span class="index-meta mono">REWORKS / FLIPS</span>
+            <span class="index-arrow">↗</span>
+          </div>
+          <div class="index-row">
+            <span class="index-no mono">03</span>
+            <span class="index-name">MASHUPS</span>
+            <span class="index-meta mono">BLENDS / HYBRIDS</span>
+            <span class="index-arrow">↗</span>
+          </div>
+          <div class="index-row">
+            <span class="index-no mono">04</span>
+            <span class="index-name">ORIGINALS</span>
+            <span class="index-meta mono">TRACKS / UNRELEASED</span>
+            <span class="index-arrow">↗</span>
+          </div>
+          <div class="index-row">
+            <span class="index-no mono">05</span>
+            <span class="index-name">MIXES</span>
+            <span class="index-meta mono">SETS / SESSIONS</span>
+            <span class="index-arrow">↗</span>
+          </div>
+          <div class="index-row">
+            <span class="index-no mono">06</span>
+            <span class="index-name">EXTENDEDS</span>
+            <span class="index-meta mono">DJ TOOLS / VERSIONS</span>
+            <span class="index-arrow">↗</span>
+          </div>
         </div>
       </div>
 
-      <div class="hero-copy">
-        <p class="eyebrow mono">COSTA / 2026</p>
-        <h1>MUSIC<br>ARCHIVE</h1>
-        <p class="hero-statement">MUSIC FOR THE PEOPLE.</p>
-        <p class="hero-description mono">CURATED / ARCHIVED / KEPT MOVING.</p>
-        <div class="hero-rule"></div>
-        <p class="hero-location mono">COSTA RICA / SC / 2026</p>
+      <div class="cover-panel">
+        <div class="cover-topline mono">
+          <span>COSTA / MUSIC ARCHIVE</span>
+          <span>SC — CR</span>
+        </div>
+
+        <div class="cover-image">
+          <img src="assets/recent-2.webp" alt="" />
+          <div class="cover-label mono">MUSIC FOR THE PEOPLE.</div>
+        </div>
+
+        <div class="cover-footer">
+          <p>CURATED, ARCHIVED<br>AND KEPT MOVING.</p>
+          <a href="#archive" class="cover-link mono">FEATURED RELEASE ↓</a>
+        </div>
       </div>
     </section>
 
@@ -64,9 +113,6 @@
         <div class="featured-layout">
           <div class="featured-media">
             <img class="featured-image" src="assets/featured.webp" alt="Featured COSTA release" />
-            <span class="drag-layer drag-a" aria-hidden="true"></span>
-            <span class="drag-layer drag-b" aria-hidden="true"></span>
-            <span class="drag-layer drag-c" aria-hidden="true"></span>
             <div class="photo-note mono">MOVEMENT / PEOPLE / PLACES</div>
           </div>
 
@@ -92,98 +138,21 @@
           <span class="mono section-number">02</span>
           <h2>RECENT RELEASES</h2>
         </div>
-
-        <div class="section-tools mono">
-          <span id="filter-label">ALL RELEASES</span>
-          <button class="text-button mono" id="show-all">RESET FILTER</button>
-        </div>
+        <p class="section-note mono">LATEST FILES / 2026</p>
       </div>
 
       <div id="release-grid" class="release-grid"></div>
     </section>
 
-    <section class="folder-section">
-      <div class="shell">
-        <div class="section-head folder-head">
-          <div class="section-title-wrap">
-            <span class="mono section-number">03</span>
-            <h2>OPEN THE ARCHIVE</h2>
-          </div>
-
-          <p class="folder-intro">
-            Choose a folder. The structure stays visible while the release index filters above.
-          </p>
-        </div>
-
-        <div class="folder-grid" aria-label="Archive folders">
-          <button class="folder-card active" data-filter="all">
-            <span class="folder-tab"></span>
-            <span class="folder-index mono">00</span>
-            <span class="folder-name">ALL FILES</span>
-            <span class="folder-meta mono">MASTER INDEX</span>
-            <span class="folder-arrow">↗</span>
-          </button>
-
-          <button class="folder-card" data-filter="beats">
-            <span class="folder-tab"></span>
-            <span class="folder-index mono">01</span>
-            <span class="folder-name">BEATS</span>
-            <span class="folder-meta mono">INSTRUMENTALS / IDEAS</span>
-            <span class="folder-arrow">↗</span>
-          </button>
-
-          <button class="folder-card" data-filter="remixes">
-            <span class="folder-tab"></span>
-            <span class="folder-index mono">02</span>
-            <span class="folder-name">REMIXES</span>
-            <span class="folder-meta mono">REWORKS / FLIPS</span>
-            <span class="folder-arrow">↗</span>
-          </button>
-
-          <button class="folder-card" data-filter="mashups">
-            <span class="folder-tab"></span>
-            <span class="folder-index mono">03</span>
-            <span class="folder-name">MASHUPS</span>
-            <span class="folder-meta mono">BLENDS / HYBRIDS</span>
-            <span class="folder-arrow">↗</span>
-          </button>
-
-          <button class="folder-card" data-filter="originals">
-            <span class="folder-tab"></span>
-            <span class="folder-index mono">04</span>
-            <span class="folder-name">ORIGINALS</span>
-            <span class="folder-meta mono">TRACKS / UNRELEASED</span>
-            <span class="folder-arrow">↗</span>
-          </button>
-
-          <button class="folder-card" data-filter="mixes">
-            <span class="folder-tab"></span>
-            <span class="folder-index mono">05</span>
-            <span class="folder-name">MIXES</span>
-            <span class="folder-meta mono">SETS / SESSIONS</span>
-            <span class="folder-arrow">↗</span>
-          </button>
-
-          <button class="folder-card" data-filter="extendeds">
-            <span class="folder-tab"></span>
-            <span class="folder-index mono">06</span>
-            <span class="folder-name">EXTENDEDS</span>
-            <span class="folder-meta mono">DJ TOOLS / VERSIONS</span>
-            <span class="folder-arrow">↗</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
     <section class="closing shell">
       <article class="closing-card" id="about">
-        <span class="closing-kicker mono">04 — ABOUT</span>
+        <span class="closing-kicker mono">03 — ABOUT</span>
         <h2>BUILT FROM RHYTHM,<br>CULTURE & PASIÓN.</h2>
         <p>COSTA is a moving creative identity rooted in music — mixes, edits, originals and the visual language around them.</p>
       </article>
 
       <article class="closing-card support" id="support">
-        <span class="closing-kicker mono">05 — SUPPORT</span>
+        <span class="closing-kicker mono">04 — SUPPORT</span>
         <h2>TAKE THE MUSIC.<br>SUPPORT IF IT MOVES YOU.</h2>
         <div class="support-links">
           <a href="#" aria-disabled="true">SOUNDCLOUD ↗</a>
